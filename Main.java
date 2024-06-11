@@ -19,9 +19,9 @@ public class Main {
 		File originalFile = new File(filePath);
 		//If invalid path
 		if (!originalFile.exists() || !originalFile.isDirectory()) {
-            System.out.println("Invalid directory path.");
-            return;
-        }
+            		System.out.println("Invalid directory path.");
+            		return;
+        	}
 		String newFileDirectory = filePath.substring(0, filePath.lastIndexOf(File.separator));
 		String newFileName = File.separator + "DuplicateSongs";
 		File dupeFile = new File(newFileDirectory + newFileName);
